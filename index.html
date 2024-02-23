@@ -1,0 +1,67 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="search">
+                <input type="text" placeholder="Search for a city...">
+                <button><img src="/images/loupe.png" alt="Search button"></button>
+            </div>
+
+            <div class="error">
+                <p>Invalid City Name</p>
+            </div>
+
+        <div class="all-info">
+
+            <div class="main">
+                <h1 class="temp">69°</h1>
+                <h2 class="status">sunny</h2>
+            </div>
+
+            <img src="./images/night_half_moon_rain_thunder.png" alt="" class="weather-icon">
+
+            <img src="./images/background.png" alt="" class="background">
+
+            <div class="details">
+                <h1 class="location">Nepal</h1>
+                <hr>
+                <h2 class="date">February 23</h2>
+                <h3 class="time">8:09pm</h3>
+                <div class="extras">
+                    <div class="col">
+                        <img src="./images/humidity.png" alt="">
+                        <div>
+                            <h1 class="humidity">50%</h1>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <img src="./images/wind (1).png" alt="">
+                        <div>
+                            <h1 class="windspeed">100 km/h</h1>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        </div>
+
+        <footer>
+            <p>Weather data provided by <a href="https://openweathermap.org/api">OpenWeather</a></p>
+            <p>Icons provided by <a href="https://www.dovora.com/resources/weather-icons/">Dovora</a></p>
+        </footer>
+        
+        <script src="app.js"></script>
+    </body>
+    </html>

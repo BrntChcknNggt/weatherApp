@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+    /* z-index: -10; */
+}
+
+
+.container {
+    background: rgb(243, 243, 243);
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 50px 50px;
+    border-radius: 20px;
+    /* z-index: -5; */
+}
+
+.container .background {
+    position: absolute;
+    width: 600px;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+    border-radius: 20px;
+
+}
+
+.container .weather-icon {
+    position: absolute;
+    right: 60px;
+    top: 160px;
+    z-index: 10;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 5; */
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    height: 60px;
+    padding: 15px 30px;
+    flex: 1;
+    font-size: 1.2rem;
+    margin-right: 16px;
+    border-radius: 30px;
+    font-weight: 300;
+    background: #ffffff;
+    /* z-index: 100; */
+
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.search button img {
+    width: 20px;
+}
+
+
+.main {
+    /* background-color: beige; */
+    height: 400px;
+    margin-top: 50px;
+}
+.main h1{
+    font-size: 4rem;
+    font-weight: 450;
+}
+
+.main h2{
+    margin-top: -10px;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.details .location {
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 5;
+}
+
+.details .date {
+    font-size: 2rem;
+    font-weight: 300;
+    z-index: 5;
+}
+
+.details .time {
+    font-size: 1.4rem;
+    font-weight: 220;
+    z-index: 5;
+}
+
+.details hr {
+    width: 40%;
+    margin: 10px 0;
+    height: 1px;
+    border-top: 1px solid #000000;
+    z-index: 5;
+
+}
+
+.extras {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+
+.extras .col {
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    z-index: 5;
+}
+
+.extras .col img {
+    width: 40px;
+    margin-right: 10px;
+    z-index: 5;
+}
+
+.extras .col p {
+    font-size: 1rem;
+    font-weight: 200;
+    z-index: 5;
+}
+
+.extras .col .humidity, .windspeed {
+    font-size: 1.5rem;
+    font-weight: 300;
+    z-index: 5;
+}
+
+.all-info {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    font-size: 1rem;
+    margin: 10px 0 0 10px;
+    font-weight: 700;
+    color: rgb(102, 102, 102);
+    display: none;
+}
+
+
+footer {
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+    margin-right: 10px;
+}
